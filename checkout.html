@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<form class="" action="action="{url_for('thankyou')}" method="post">
+  <fieldset>
+    <legend style="width:60%"> CheckOut</legend>
+
+    <h3> Items in your bag is:</h3>
+
+    <p id="item"></p>
+
+    <hr>
+    <label for="username">Enter user name:
+    <input type="text" name="username" placeholder="Type Use name"></label>
+<br><label for="email"> Enter your email:<input type="email" name="email" placeholder="Type your email"></label>
+<br><input type="submit" name="submit" value="Submit order" style="margin:.5em">
+
+  </fieldset>
+</form>
+
+
+    <h1> Name: <span class="display_name1"> </span></h1>
+    <h2  >  <span class="image_id"></span></h2>
+    <h3 > price is: <span class="price"></span></h3>
+
+<a href="lastday.html"> Back TO FORM</a>
+
+    <script type="text/javascript">
+    let d1=document.querySelector(' #display_name').innerHTML=
+    localStorage.getItem('name');
+
+    let d2=document.querySelector(' #image_id').innerHTML=
+    localStorage.getItem('image');
+
+    let d3=document.querySelector(' #price').innerHTML=
+    localStorage.getItem('price');
+
+
+
+
+    </script>
+
+  </body>
+</html>
